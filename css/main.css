@@ -2814,14 +2814,35 @@ input::-moz-focus-inner {
   display: block;
   position: relative;
 }
+.item-folio__thumb .thumb-link2 {
+  display: block;
+  position: relative;
+}
 
 .item-folio__thumb .thumb-link::before,
 .item-folio__thumb .thumb-link::after,
 .item-folio__thumb .thumb-link .item-folio__project-link {
   transition: all 0.5s ease-in-out;
 }
+.item-folio__thumb .thumb-link2::before,
+.item-folio__thumb .thumb-link2::after,
+.item-folio__thumb .thumb-link2 .item-folio__project-link {
+  transition: all 0.5s ease-in-out;
+}
 
 .item-folio__thumb .thumb-link::before {
+  display: block;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+}
+.item-folio__thumb .thumb-link2::before {
   display: block;
   content: "";
   background-color: rgba(0, 0, 0, 0.7);
@@ -2843,6 +2864,24 @@ input::-moz-focus-inner {
   background-position: center center;
   background-size: 80%;
   background-image: url(../images/icons/icon-plus.svg);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.item-folio__thumb .thumb-link2::after {
+  display: block;
+  content: "";
+  width: 3.6rem;
+  height: 3.6rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80%;
+  background-image: url(../images/icons/icon-link.svg);
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translate3d(-50%, -50%, 0);
@@ -2945,6 +2984,10 @@ input::-moz-focus-inner {
     width: 3rem;
     height: 3rem;
   }
+  .item-folio__thumb .thumb-link2::after {
+    width: 3rem;
+    height: 3rem;
+  }
 
   .item-folio__thumb .item-folio__project-link {
     width: 5.6rem;
@@ -3009,6 +3052,10 @@ input::-moz-focus-inner {
     width: 3.6rem;
     height: 3.6rem;
   }
+  .item-folio__thumb .thumb-link2::after {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
 
   .item-folio__thumb .item-folio__project-link {
     width: 6.4rem;
@@ -3035,6 +3082,10 @@ input::-moz-focus-inner {
   }
 
   .item-folio__thumb .thumb-link::after {
+    width: 3rem;
+    height: 3rem;
+  }
+  .item-folio__thumb .thumb-link2::after {
     width: 3rem;
     height: 3rem;
   }
@@ -3673,3 +3724,4 @@ html[data-useragent*='rv:11.0'] .ss-go-top::after {
 }
 
 /*# sourceMappingURL=main.css.map */
+
