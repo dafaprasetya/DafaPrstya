@@ -290,7 +290,16 @@
     })();
 
 })(jQuery);
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', 'particles.json', function() {
-    console.log('callback - particles.js config loaded');
-  });
+
+// function janganklik() {
+    
+//     $('#donothv').css('z-index', '0')
+//     $("#intro-pic").css("filter", "sepia(0%) grayscale(0%) drop-shadow(12px 0px 0px rgba(207, 23, 103, 1))");
+//     $(".intro-pic-smile").css('display', 'none')
+//     setInterval(function () {
+//         $("#intro-pic").css("filter", "sepia(40%) grayscale(50%) drop-shadow(12px 0px 0px rgba(207, 23, 103, 1))");
+//         $('#donothv').css('z-index', '9')
+//         $(".intro-pic-smile").css('display', 'block')
+//     },5000)
+    
+// }
